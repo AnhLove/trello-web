@@ -1,0 +1,25 @@
+import { createTheme } from '@mui/material/styles';
+import { red } from '@mui/material/colors';
+
+// Create a theme instance.
+const theme = createTheme({
+    cssVariables: true,
+    palette: {
+        mode: 'dark', //default is light
+        primary: {
+            // main: '#556cd6',
+            main: red.A400,
+        },
+        secondary: {
+            main: '#19857b',
+        },
+        error: {
+            main: red.A400,
+        },
+        text: {
+            secondary: red.A400,
+        },
+    },
+});
+
+export default theme;
